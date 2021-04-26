@@ -31,8 +31,8 @@ public class Marketer {
 		}
 	}
 
-	public static void main(String[] args) throws IOException, JSONException {
-		JSONObject json = readJsonFromUrl("https://graph.facebook.com/19292868552");
+	public static void ReadData(String item) throws IOException, JSONException {
+		JSONObject json = readJsonFromUrl("https://api.evemarketer.com/ec/marketstat/json?typeid=" + Lookup("market "item));
 		System.out.println(json.toString());
 		System.out.println(json.get("id"));
 		  }
