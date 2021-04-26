@@ -1,0 +1,39 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  	<modelVersion>4.0.0</modelVersion>
+  	<groupId>com.github.Khrysaoros</groupId>
+  	<artifactId>NOOKDDB</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  	<name>Main</name>
+  	<description>Central NOOKD EVE Discord Bot</description>
+  
+  	<repositories>
+  		<repository>
+    		<id>exodusproject-releases</id>
+    		<name>nexus.exodus-project.net release repository</name>
+    		<url>https://nexus.exodus-project.net/content/repositories/releases</url>
+  		</repository>
+	</repositories>
+  
+  	<dependencies>
+        <dependency>
+            <groupId>org.javacord</groupId>
+            <artifactId>javacord</artifactId>
+            <version>3.3.0</version>
+            <type>pom</type>
+        </dependency>
+        
+        <dependency>
+  			<groupId>net.exodusproject.eve</groupId>
+  			<artifactId>eveapi4j-esi</artifactId>
+  			<version>1.0.0-RELEASE</version>
+  			<scope>compile</scope>
+		</dependency>
+		
+		<dependency>
+  			<groupId>org.json</groupId>
+  			<artifactId>json</artifactId>
+  			<version>20180813</version>
+  			<type>bundle</type>
+		</dependency>
+    </dependencies>
+</project>
