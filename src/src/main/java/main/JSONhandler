@@ -1,0 +1,18 @@
+package com.github.khrysaoros.nookdbot;
+
+import org.json.simple.JSONObject;
+
+public class JSONhandler {
+	@SuppressWarnings("unchecked")
+	public void Encode(String[] name, String[] args) {
+		JSONObject obj = new JSONObject();
+		
+		for (int i = 0; i < name.length; i++) {
+			obj.put(name[i], args[i]);
+		}
+	}
+	
+	public static int Decode(String file, String section) {
+		return 0;
+	}
+}
